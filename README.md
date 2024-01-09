@@ -109,3 +109,6 @@ from CTkTable import EnhancedCTkTable
 # Initialize the EnhancedCTkTable with headers
 table = EnhancedCTkTable(master, headers=['Header1', 'Header2', 'Header3'], ...)
 
+Methods
+add_headers(): Adds header labels to the table. Headers are specified during the initialization of the EnhancedCTkTable instance.
+
