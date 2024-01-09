@@ -96,3 +96,16 @@ _here, **args** means ctkbutton parameters which can also be passed_
 
 Note: This library is at early stage so there can be some performance issues. 
 ### Thanks for visiting! Hope it will help :)
+
+## Enhanced CTkTable
+
+`EnhancedCTkTable` is an extension of the `CTkTable` class that adds support for easily creating and managing table headers.
+
+### Usage
+
+```python
+from CTkTable import EnhancedCTkTable
+
+# Initialize the EnhancedCTkTable with headers
+table = EnhancedCTkTable(master, headers=['Header1', 'Header2', 'Header3'], ...)
+
