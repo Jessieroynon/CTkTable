@@ -529,3 +529,17 @@ class CTkTable(customtkinter.CTkFrame):
             self.anchor = kwargs.pop("anchor")
             
         self.update_values(self.values, **kwargs)
+class EnhancedCTkTable(CTkTable):
+    def __init__(self, master, headers, **kwargs):
+        super().__init__(master, **kwargs)
+        self.headers = headers
+        self.add_headers()
+
+    def add_headers(self):
+        # You might need to adjust the parameters such as font, fg_color, and text_color
+        for i, header in enumerate(self.headers):
+            header_label = customtkinter.CTkLabel(self, text=header,
+                                                  font=ctk.CTkFont(size=12, weight='bold'), fg_color="#233845",
+												  text_color="#00EFAE", justify="center")  
+            header_label.grid(row=0, column=i, sticky="nsew", padx=5, pady=5)
+
